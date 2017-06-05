@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">>
+    <include layout="@layout/app_toolbar"/>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/search_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入发布部门"/>
+        <EditText
+            android:id="@+id/dep_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入通知发布部门"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/content_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入发布内容"/>
+        <EditText
+            android:id="@+id/content_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入通知内容关键词"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/search_view4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="输入标题关键词"
+            />
+        <EditText
+            android:id="@+id/query_search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="请输入标题关键词"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/search_view5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="请输入附件名称"/>
+        <EditText
+            android:id="@+id/file_search"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="请输入附件名称"/>
+    </TableRow>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="          根据起止时间查询"
+        android:textSize="30sp"
+        />
+    <TableRow>
+
+        <TextView
+            android:id="@+id/search_view2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="输入开始时间"/>
+
+        <EditText
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:maxLength="8"
+            android:hint="时间格式YYYYMMDD"/>
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/search_view3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="输入截止时间"/>
+       <EditText
+           android:id="@+id/end_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:digits="1234567890"
+           android:maxLength="8"
+           android:hint="时间格式YYYYMMDD"/>
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="搜索"
+        />
+
+</TableLayout>

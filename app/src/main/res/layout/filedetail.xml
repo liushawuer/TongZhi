@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/app_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/file_show"
+            android:layout_width="382dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="附件的显示"/>
+
+        <TextView
+            android:id="@+id/files_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:text="附件名字"
+            android:layout_below="@+id/file_show" />
+       <Button
+            android:id="@+id/downfilebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
